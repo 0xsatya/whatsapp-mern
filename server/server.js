@@ -21,6 +21,7 @@ const pusher = new Pusher({
 app.use(express.json())
 app.use(cors());
 
+const __dirname = path.resolve();
 const buildPath = path.join(__dirname, '..','build');
 app.use(express.static(buildPath));
 
